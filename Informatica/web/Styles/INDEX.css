@@ -1,0 +1,180 @@
+/* ===== ESTILO GENERAL ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== ENCABEZADO ===== */
+.headerOpciones {
+    background-color: #2f4050;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.headerOpciones .bannerHorario {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.headerOpciones .bannerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerOpciones .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.headerOpciones .infoGroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerOpciones .infoItem {
+    margin: 0 15px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.main-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ===== OPCIONES DE ADMINISTRACIÓN ===== */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.option-item {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.option-item h3 {
+    margin-bottom: 15px;
+}
+
+.option-item a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Botón azul (Clientes) */
+.option-item a[href*="ClientesAdmin"] {
+    background-color: #0066cc;
+    color: white;
+}
+
+.option-item a[href*="ClientesAdmin"]:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Botón verde (Periféricos) */
+.option-item a[href*="PerifericosAdmin"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.option-item a[href*="PerifericosAdmin"]:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background-color: #2f4050;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ===== CARRUSEL ===== */
+/* Margen superior para separar el carrusel de los botones */
+.carousel {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Texto dentro del carrusel */
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    color: #f8f9fa;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Ajuste responsivo de imágenes */
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+/* Botones de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators [data-bs-target] {
+    background-color: #0066cc;
+}
+
+.carousel-indicators .active {
+    background-color: #28a745;
+}

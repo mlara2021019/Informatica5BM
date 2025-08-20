@@ -1,0 +1,142 @@
+/* ===== ESTILO GENERAL ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.crud-main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ===== FORMULARIO ===== */
+.formulario {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    color: #2f4050;
+}
+
+.formulario label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus {
+    border-color: #007bff;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 6px 4px;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Botón primario (Agregar, Actualizar) */
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0069d9;
+}
+
+/* Botón actualizar */
+.btn-Actualizar {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-Actualizar:hover {
+    background: #138496;
+}
+
+/* Botón eliminar */
+.btn-drop {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-drop:hover {
+    background: #c82333;
+}
+
+/* ===== TABLA ===== */
+.tabla-registros {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tabla-registros h2 {
+    margin-bottom: 20px;
+    color: #2f4050;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+thead {
+    background: #2f4050;
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Botones dentro de la tabla */
+#table-button {
+    display: flex;
+    gap: 10px;
+}
